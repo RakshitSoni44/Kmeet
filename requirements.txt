@@ -1,32 +1,34 @@
 # FastAPI backend
-fastapi==0.103.0
+fastapi==0.110.0
 uvicorn[standard]==0.23.2
 
-# LLM and agent frameworks
+# LLM & agent frameworks
 openai==0.28.1
-langchain==0.1.119
+langchain==0.1.16
 
 # Embeddings & Vector DB
 sentence-transformers==2.2.2
 faiss-cpu==1.7.4
-chromadb==0.3.33
+chromadb==0.4.22
 
-# Web scraping / search
+# Web search / aggregation
+google-search-results==2.4.2
+tavily-python==0.3.1
+requests==2.31.0
+beautifulsoup4==4.12.2
+
+# Browser scraping (optional / fallback)
 playwright==1.42.0
-serpapi==0.4.0
-tavily==0.0.3
 
 # Utilities
 python-dotenv==1.0.1
-requests==2.31.0
-pydantic==2.2.1
 loguru==0.7.0
-beautifulsoup4==4.12.2
 
 # Resume parsing
 pdfplumber==0.9.0
 python-docx==0.8.12
 
-# Optional NLP tools
+# NLP
 nltk==3.8.1
 spacy==3.6.0
+pydantic==2.6.1
